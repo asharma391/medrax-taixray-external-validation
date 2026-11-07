@@ -68,9 +68,9 @@ resource-constrained pilot uses a deterministic two-stage design:
 
 1. Uniformly sample a fixed number of 100-row dataset-server pages from across
    the official split using a locked seed.
-2. Within that candidate pool, retain no more than one image per hashed
-   TAIX-Ray patient identifier (the identifier is used only in memory), then
-   randomly order the remaining patient-level records with the same seed.
+2. Within that candidate pool, retain no more than one image per TAIX-Ray
+   patient identifier (the identifier is used only in memory), then randomly
+   order the remaining patient-level records with the same seed.
 3. Fetch each selected image from the official source at runtime and record only the
    non-identifying row index, image byte SHA-256, labels, configuration, and
    scores needed to reproduce aggregate results.

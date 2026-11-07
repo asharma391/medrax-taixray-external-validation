@@ -77,8 +77,8 @@ def create_pilot(
         "test_rows_total": TAIXRAY_TEST_ROWS,
         "sampling": {
             "method": (
-                "two-stage random page pilot, then one randomly ordered image per "
-                "in-memory patient pseudonym"
+                "two-stage random-page pilot; one retained image per in-memory patient "
+                "pseudonym, then a random ordering for final selection"
             ),
             "seed": seed,
             "n_requested": sample_size,

@@ -272,7 +272,7 @@
     },
     "sampling": {
       "candidate_rows": 6400,
-      "method": "two-stage random page pilot, then one randomly ordered image per in-memory patient pseudonym",
+      "method": "two-stage random-page pilot; one retained image per in-memory patient pseudonym, then a random ordering for final selection",
       "n_requested": 512,
       "n_selected": 512,
       "pages_examined": 64,
