@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.DS_Store
+.venv/
+.cache/
+data/
+*.pt
+*.ckpt
+.env
+
+# Row-level source-derived artifacts are intentionally not versioned.
+results/pilot_manifest.json
+results/predictions.json

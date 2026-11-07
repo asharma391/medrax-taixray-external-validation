@@ -1,0 +1,444 @@
+{
+  "created_at_utc": "2026-11-07T10:12:57.120763+00:00",
+  "encoding_stratified_results": {
+    "4095.0": {
+      "Atelectasis": {
+        "auroc": 0.7583143754739464,
+        "auroc_95_ci": [
+          0.6788576592192,
+          0.8297499272330207
+        ],
+        "average_precision": 0.8940365362073166,
+        "average_precision_95_ci": [
+          0.8367369546111366,
+          0.947559597311915
+        ],
+        "n_evaluable": 232,
+        "n_excluded_questionable": 22,
+        "n_positive": 181,
+        "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+        "prevalence": 0.7801724137931034,
+        "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Atelectasis"
+      },
+      "Cardiomegaly": {
+        "auroc": 0.8044386665428545,
+        "auroc_95_ci": [
+          0.7460646568627451,
+          0.8600181080399718
+        ],
+        "average_precision": 0.8498604583918753,
+        "average_precision_95_ci": [
+          0.7858552072182616,
+          0.9051648076466489
+        ],
+        "n_evaluable": 210,
+        "n_excluded_questionable": 44,
+        "n_positive": 121,
+        "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+        "prevalence": 0.5761904761904761,
+        "relation_note": "Related phenotype: TAIX HeartSize >=2 means enlarged or massively enlarged.",
+        "score_key": "Cardiomegaly"
+      },
+      "Effusion": {
+        "auroc": 0.8114769345238094,
+        "auroc_95_ci": [
+          0.7466834242677974,
+          0.8697938336374696
+        ],
+        "average_precision": 0.8411614007199925,
+        "average_precision_95_ci": [
+          0.7682924549440019,
+          0.9128497406435176
+        ],
+        "n_evaluable": 212,
+        "n_excluded_questionable": 42,
+        "n_positive": 128,
+        "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+        "prevalence": 0.6037735849056604,
+        "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Effusion"
+      },
+      "Lung Opacity": {
+        "auroc": 0.745815527065527,
+        "auroc_95_ci": [
+          0.6698286400729893,
+          0.8105226533907636
+        ],
+        "average_precision": 0.6709007404815324,
+        "average_precision_95_ci": [
+          0.5709929136559656,
+          0.7595288490304976
+        ],
+        "n_evaluable": 222,
+        "n_excluded_questionable": 32,
+        "n_positive": 78,
+        "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+        "prevalence": 0.35135135135135137,
+        "relation_note": "Near-direct terminology match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Lung Opacity"
+      }
+    },
+    "65535.0": {
+      "Atelectasis": {
+        "auroc": 0.6475155279503105,
+        "auroc_95_ci": [
+          0.5607305902724332,
+          0.7299882755809861
+        ],
+        "average_precision": 0.8495391085536519,
+        "average_precision_95_ci": [
+          0.7940119301941799,
+          0.906179275363721
+        ],
+        "n_evaluable": 240,
+        "n_excluded_questionable": 18,
+        "n_positive": 184,
+        "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+        "prevalence": 0.7666666666666667,
+        "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Atelectasis"
+      },
+      "Cardiomegaly": {
+        "auroc": 0.6687397708674304,
+        "auroc_95_ci": [
+          0.5967537608264847,
+          0.7374735514322917
+        ],
+        "average_precision": 0.7426117732571675,
+        "average_precision_95_ci": [
+          0.6616000939039488,
+          0.8144513962835243
+        ],
+        "n_evaluable": 224,
+        "n_excluded_questionable": 34,
+        "n_positive": 130,
+        "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+        "prevalence": 0.5803571428571429,
+        "relation_note": "Related phenotype: TAIX HeartSize >=2 means enlarged or massively enlarged.",
+        "score_key": "Cardiomegaly"
+      },
+      "Effusion": {
+        "auroc": 0.7405825242718448,
+        "auroc_95_ci": [
+          0.6784657360674893,
+          0.8057410709210057
+        ],
+        "average_precision": 0.7622746231495992,
+        "average_precision_95_ci": [
+          0.6841357556320229,
+          0.8359292011617357
+        ],
+        "n_evaluable": 228,
+        "n_excluded_questionable": 30,
+        "n_positive": 125,
+        "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+        "prevalence": 0.5482456140350878,
+        "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Effusion"
+      },
+      "Lung Opacity": {
+        "auroc": 0.7465635738831615,
+        "auroc_95_ci": [
+          0.6844112353138084,
+          0.8043537449427252
+        ],
+        "average_precision": 0.7159757004673921,
+        "average_precision_95_ci": [
+          0.6225334835513169,
+          0.7991660873262774
+        ],
+        "n_evaluable": 229,
+        "n_excluded_questionable": 29,
+        "n_positive": 97,
+        "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+        "prevalence": 0.42358078602620086,
+        "relation_note": "Near-direct terminology match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Lung Opacity"
+      }
+    }
+  },
+  "primary_endpoint_results": {
+    "Atelectasis": {
+      "auroc": 0.7059275380873127,
+      "auroc_95_ci": [
+        0.6487061390791886,
+        0.7623389134765736
+      ],
+      "average_precision": 0.8733272976054048,
+      "average_precision_95_ci": [
+        0.8308735654329135,
+        0.9140594609785446
+      ],
+      "n_evaluable": 472,
+      "n_excluded_questionable": 40,
+      "n_positive": 365,
+      "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+      "prevalence": 0.7733050847457628,
+      "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+      "score_key": "Atelectasis"
+    },
+    "Cardiomegaly": {
+      "auroc": 0.7396207519648184,
+      "auroc_95_ci": [
+        0.6967580690184151,
+        0.7847055819235979
+      ],
+      "average_precision": 0.7971872624163657,
+      "average_precision_95_ci": [
+        0.7510496606530624,
+        0.8434201331115382
+      ],
+      "n_evaluable": 434,
+      "n_excluded_questionable": 78,
+      "n_positive": 251,
+      "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+      "prevalence": 0.5783410138248848,
+      "relation_note": "Related phenotype: TAIX HeartSize >=2 means enlarged or massively enlarged.",
+      "score_key": "Cardiomegaly"
+    },
+    "Effusion": {
+      "auroc": 0.7775358796051657,
+      "auroc_95_ci": [
+        0.7317890204973118,
+        0.8200688363509593
+      ],
+      "average_precision": 0.8075768712514143,
+      "average_precision_95_ci": [
+        0.7536949021714016,
+        0.860786126460191
+      ],
+      "n_evaluable": 440,
+      "n_excluded_questionable": 72,
+      "n_positive": 253,
+      "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+      "prevalence": 0.575,
+      "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+      "score_key": "Effusion"
+    },
+    "Lung Opacity": {
+      "auroc": 0.7435817805383023,
+      "auroc_95_ci": [
+        0.6938161170145537,
+        0.791004117813192
+      ],
+      "average_precision": 0.6899886960722657,
+      "average_precision_95_ci": [
+        0.6238021003965407,
+        0.7582013351112402
+      ],
+      "n_evaluable": 451,
+      "n_excluded_questionable": 61,
+      "n_positive": 175,
+      "positive_definition": "TAIX grade >=2; grade 0 negative; grade 1 excluded",
+      "prevalence": 0.38802660753880264,
+      "relation_note": "Near-direct terminology match; bilateral TAIX grades are aggregated by max.",
+      "score_key": "Lung Opacity"
+    }
+  },
+  "provenance": {
+    "compatibility_patch": "https://github.com/asharma391/MedRAX",
+    "medrax_commit": "d243cc50348fa0f0c219cc623e2cf26b906be676",
+    "medrax_repository": "https://github.com/bowang-lab/MedRAX",
+    "taixray_dataset": "https://huggingface.co/datasets/TLAIM/TAIX-Ray",
+    "taixray_doi": "https://doi.org/10.1038/s41597-026-07271-7",
+    "taixray_hf_revision": "7f43720e2c7ab6400608880c0cb8b950ac0e5afb"
+  },
+  "run_metadata": {
+    "adapter": {
+      "device": "mps",
+      "input_maxval": "taixray_uint16_range_v1",
+      "model_checkpoint_sha256": "56524913dd16a906422e8d8b66a7a5c46be1d82eb7ac012d8103776f1aa68899"
+    },
+    "bootstrap_repetitions": 2000,
+    "bootstrap_seed": 20261107,
+    "encoding_strata": {
+      "4095.0": 254,
+      "65535.0": 258
+    },
+    "image_encoding": {
+      "assumption": "TAIX-Ray public PNGs contain observed 12-bit-valued and wider-range uint16 encodings. The fixed v1 rule uses 4095 when observed max <=4095 and 65535 otherwise; it never normalizes by each image's observed maximum.",
+      "input_maxval": "taixray_uint16_range_v1"
+    },
+    "n_predictions": 512,
+    "runtime": {
+      "numpy": "2.5.4",
+      "platform": "macOS-15.7.3-arm64-arm-64bit",
+      "python": "3.12.13 (main, May 10 2026, 19:20:41) [Clang 22.1.3 ]",
+      "scikit_learn": "1.9.1",
+      "torch": "2.15.0",
+      "torchvision": "0.29.2",
+      "torchxrayvision": "1.5.7"
+    },
+    "sampling": {
+      "candidate_rows": 6400,
+      "method": "two-stage random page pilot, then one randomly ordered image per in-memory patient pseudonym",
+      "n_requested": 512,
+      "n_selected": 512,
+      "pages_examined": 64,
+      "seed": 20261107,
+      "unique_patients_available": 1434
+    }
+  },
+  "schema_version": 1,
+  "scope": "tool-level external-validation pilot; not a full MedRAX-agent or clinical evaluation",
+  "score_semantics": "TorchXRayVision operating-point-normalized model score in [0, 1]; not a calibrated probability.",
+  "sensitivity_analyses": {
+    "grade_at_least_1": {
+      "Atelectasis": {
+        "auroc": 0.6978193146417445,
+        "auroc_95_ci": [
+          0.6449133453136611,
+          0.7568390548809885
+        ],
+        "average_precision": 0.8825558042868232,
+        "average_precision_95_ci": [
+          0.8444194770156622,
+          0.9192766776551548
+        ],
+        "n_evaluable": 512,
+        "n_excluded_questionable": 0,
+        "n_positive": 405,
+        "positive_definition": "TAIX grade >=1; grade 0 negative",
+        "prevalence": 0.791015625,
+        "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Atelectasis"
+      },
+      "Cardiomegaly": {
+        "auroc": 0.7157473383493613,
+        "auroc_95_ci": [
+          0.6698818362762152,
+          0.7611981326501698
+        ],
+        "average_precision": 0.8191553726280725,
+        "average_precision_95_ci": [
+          0.7757048377119156,
+          0.8569166291182478
+        ],
+        "n_evaluable": 512,
+        "n_excluded_questionable": 0,
+        "n_positive": 329,
+        "positive_definition": "TAIX grade >=1; grade 0 negative",
+        "prevalence": 0.642578125,
+        "relation_note": "Related phenotype: TAIX HeartSize >=2 means enlarged or massively enlarged.",
+        "score_key": "Cardiomegaly"
+      },
+      "Effusion": {
+        "auroc": 0.7592760180995475,
+        "auroc_95_ci": [
+          0.716260640994488,
+          0.801738777110986
+        ],
+        "average_precision": 0.8306685372350848,
+        "average_precision_95_ci": [
+          0.7851207875439006,
+          0.8760043309353838
+        ],
+        "n_evaluable": 512,
+        "n_excluded_questionable": 0,
+        "n_positive": 325,
+        "positive_definition": "TAIX grade >=1; grade 0 negative",
+        "prevalence": 0.634765625,
+        "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Effusion"
+      },
+      "Lung Opacity": {
+        "auroc": 0.6899103414394496,
+        "auroc_95_ci": [
+          0.6446425226578323,
+          0.7356404389521086
+        ],
+        "average_precision": 0.6923249361301682,
+        "average_precision_95_ci": [
+          0.6299024359792451,
+          0.7514857788451106
+        ],
+        "n_evaluable": 512,
+        "n_excluded_questionable": 0,
+        "n_positive": 236,
+        "positive_definition": "TAIX grade >=1; grade 0 negative",
+        "prevalence": 0.4609375,
+        "relation_note": "Near-direct terminology match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Lung Opacity"
+      }
+    },
+    "grade_at_least_3": {
+      "Atelectasis": {
+        "auroc": 0.7398045879354291,
+        "auroc_95_ci": [
+          0.6607882117669132,
+          0.8158888135351227
+        ],
+        "average_precision": 0.47531546689253007,
+        "average_precision_95_ci": [
+          0.34948783399579436,
+          0.6364548541878932
+        ],
+        "n_evaluable": 151,
+        "n_excluded_questionable": 361,
+        "n_positive": 44,
+        "positive_definition": "TAIX grade >=3; grade 0 negative; grades 1--2 excluded",
+        "prevalence": 0.2913907284768212,
+        "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Atelectasis"
+      },
+      "Cardiomegaly": {
+        "auroc": 0.6716343765524093,
+        "auroc_95_ci": [
+          0.4783729018920577,
+          0.8563599407038633
+        ],
+        "average_precision": 0.3665394029256047,
+        "average_precision_95_ci": [
+          0.07692903000181019,
+          0.6467682305207856
+        ],
+        "n_evaluable": 194,
+        "n_excluded_questionable": 318,
+        "n_positive": 11,
+        "positive_definition": "TAIX grade >=3; grade 0 negative; grades 1--2 excluded",
+        "prevalence": 0.05670103092783505,
+        "relation_note": "Related phenotype: TAIX HeartSize >=2 means enlarged or massively enlarged.",
+        "score_key": "Cardiomegaly"
+      },
+      "Effusion": {
+        "auroc": 0.8322544328736279,
+        "auroc_95_ci": [
+          0.7579329577992912,
+          0.8969875596671443
+        ],
+        "average_precision": 0.5276499366925013,
+        "average_precision_95_ci": [
+          0.3820599687038712,
+          0.7136594066272994
+        ],
+        "n_evaluable": 225,
+        "n_excluded_questionable": 287,
+        "n_positive": 38,
+        "positive_definition": "TAIX grade >=3; grade 0 negative; grades 1--2 excluded",
+        "prevalence": 0.1688888888888889,
+        "relation_note": "Direct finding-name match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Effusion"
+      },
+      "Lung Opacity": {
+        "auroc": 0.8843800322061192,
+        "auroc_95_ci": [
+          0.8307822662907376,
+          0.9337124587355704
+        ],
+        "average_precision": 0.670020033270869,
+        "average_precision_95_ci": [
+          0.5179084412630923,
+          0.8023037194659626
+        ],
+        "n_evaluable": 321,
+        "n_excluded_questionable": 191,
+        "n_positive": 45,
+        "positive_definition": "TAIX grade >=3; grade 0 negative; grades 1--2 excluded",
+        "prevalence": 0.14018691588785046,
+        "relation_note": "Near-direct terminology match; bilateral TAIX grades are aggregated by max.",
+        "score_key": "Lung Opacity"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medrax-taixray-audit"
+version = "0.1.0"
+description = "Data-free external-validation pilot for the MedRAX CXR classifier on TAIX-Ray"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = {text = "MIT"}
+authors = [{name = "Arjun Sharma"}]
+dependencies = [
+    "matplotlib>=3.9",
+    "numpy>=2.0",
+    "pillow>=10.0",
+    "requests>=2.31",
+    "scikit-image>=0.24",
+    "scikit-learn>=1.5",
+    "torch>=2.4",
+    "torchvision>=0.19",
+    "torchxrayvision>=1.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+medrax-taixray-audit = "medrax_taixray_audit.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+where = ["src"]
