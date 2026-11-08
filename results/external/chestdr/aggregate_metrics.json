@@ -1,0 +1,248 @@
+{
+  "bootstrap": {
+    "base_seed": 20261107,
+    "endpoint_seed_scheme": "AUROC=base_seed+endpoint_index; average_precision=base_seed+100+endpoint_index",
+    "repetitions": 2000
+  },
+  "cohort": {
+    "analysis_unit": "patient/image",
+    "fixed_test_rows_available": 3869,
+    "n_inferred": 3869,
+    "patient_grouping": "ChestDR releases one frontal radiograph for each distinct patient; image-level bootstrap is therefore patient-level for this cohort.",
+    "raw_data_policy": "the remote ZIP is accessed by byte range; each PNG exists only in a temporary directory during its inference and is then deleted; aggregate results only are written to the repository",
+    "selection": "entire pinned MedFMC testing partition"
+  },
+  "created_at_utc": "2026-11-08T02:40:15.239656+00:00",
+  "dataset_name": "ChestDR: pinned MedFMC testing partition",
+  "limitations": [
+    "ChestDR labels were initially derived from signed clinical reports by a radiology resident and confirmed by a senior radiologist; they are not a new blinded image re-read for this project.",
+    "The partition is a pinned published MedFMC benchmark testing list, not claimed to be an official test split created by the original ChestDR dataset authors.",
+    "Only direct finding-name/terminology matches to the MedRAX-selected TorchXRayVision output vocabulary are reported; no surrogate mapping is used for the remaining ChestDR labels.",
+    "The result evaluates the classifier component only, not the GPT-driven MedRAX agent or a clinical workflow.",
+    "External evaluation does not establish absence of every possible pretraining overlap, although ChestDR is absent from the classifier's declared source datasets."
+  ],
+  "primary_endpoint_results": {
+    "Atelectasis": {
+      "auroc": 0.6234280801342476,
+      "auroc_95_ci": [
+        0.5818453821331598,
+        0.6597781514873928
+      ],
+      "average_precision": 0.05587440027323777,
+      "average_precision_95_ci": [
+        0.04607685282264301,
+        0.0720588127959928
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 156,
+      "positive_definition": "Source annotation positive for atelectasis",
+      "prevalence": 0.04032049625226156,
+      "relation_note": "Direct finding-name match.",
+      "score_key": "Atelectasis",
+      "source_label": "atelectasis"
+    },
+    "Cardiomegaly": {
+      "auroc": 0.8763900537933217,
+      "auroc_95_ci": [
+        0.8646920151814672,
+        0.8872238700122062
+      ],
+      "average_precision": 0.7324084970972604,
+      "average_precision_95_ci": [
+        0.705373109320833,
+        0.7588524242478121
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 1055,
+      "positive_definition": "Source annotation positive for cardiomegaly",
+      "prevalence": 0.27268027914189713,
+      "relation_note": "Direct finding-name match.",
+      "score_key": "Cardiomegaly",
+      "source_label": "cardiomegaly"
+    },
+    "Edema": {
+      "auroc": 0.9134116372372749,
+      "auroc_95_ci": [
+        0.8699484557119376,
+        0.9497685129432385
+      ],
+      "average_precision": 0.24770321192335396,
+      "average_precision_95_ci": [
+        0.17547440733963837,
+        0.3674289132501017
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 67,
+      "positive_definition": "Source annotation positive for pulmonary_edema",
+      "prevalence": 0.017317136210907212,
+      "relation_note": "Direct finding match: ChestDR pulmonary_edema to XRV Edema.",
+      "score_key": "Edema",
+      "source_label": "pulmonary_edema"
+    },
+    "Effusion": {
+      "auroc": 0.8920056426197759,
+      "auroc_95_ci": [
+        0.8806462583948722,
+        0.9027458554666017
+      ],
+      "average_precision": 0.7769552617933969,
+      "average_precision_95_ci": [
+        0.7528679041074,
+        0.8009064432899453
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 1011,
+      "positive_definition": "Source annotation positive for pleural_effusion",
+      "prevalence": 0.26130783148100284,
+      "relation_note": "Direct finding match: ChestDR pleural_effusion to XRV Effusion.",
+      "score_key": "Effusion",
+      "source_label": "pleural_effusion"
+    },
+    "Emphysema": {
+      "auroc": 0.7231292735042735,
+      "auroc_95_ci": [
+        0.6712128009212818,
+        0.7713348177902649
+      ],
+      "average_precision": 0.14381452903472344,
+      "average_precision_95_ci": [
+        0.09672516585577207,
+        0.21050500790302765
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 125,
+      "positive_definition": "Source annotation positive for emphysema",
+      "prevalence": 0.03230808994572241,
+      "relation_note": "Direct finding-name match.",
+      "score_key": "Emphysema",
+      "source_label": "emphysema"
+    },
+    "Fibrosis": {
+      "auroc": 0.6696229054954177,
+      "auroc_95_ci": [
+        0.6436153801297012,
+        0.6962684997127526
+      ],
+      "average_precision": 0.19933234187524956,
+      "average_precision_95_ci": [
+        0.17362676792383905,
+        0.23311287190714272
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 435,
+      "positive_definition": "Source annotation positive for fibrosis",
+      "prevalence": 0.11243215301111398,
+      "relation_note": "Direct finding-name match.",
+      "score_key": "Fibrosis",
+      "source_label": "fibrosis"
+    },
+    "Nodule": {
+      "auroc": 0.56618796207979,
+      "auroc_95_ci": [
+        0.5392760451517076,
+        0.5925777928004637
+      ],
+      "average_precision": 0.1951563488706676,
+      "average_precision_95_ci": [
+        0.1701459148402086,
+        0.22639130760595683
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 536,
+      "positive_definition": "Source annotation positive for nodule",
+      "prevalence": 0.1385370896872577,
+      "relation_note": "Direct finding-name match.",
+      "score_key": "Nodule",
+      "source_label": "nodule"
+    },
+    "Pleural thickening": {
+      "auroc": 0.6710423904453755,
+      "auroc_95_ci": [
+        0.6432660987313844,
+        0.6990215912976776
+      ],
+      "average_precision": 0.18437188233745574,
+      "average_precision_95_ci": [
+        0.1581451570579457,
+        0.21990479721338324
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 385,
+      "positive_definition": "Source annotation positive for thickened_pleura",
+      "prevalence": 0.09950891703282502,
+      "relation_note": "Direct terminology match: ChestDR thickened_pleura to XRV Pleural_Thickening.",
+      "score_key": "Pleural_Thickening",
+      "source_label": "thickened_pleura"
+    },
+    "Pneumonia": {
+      "auroc": 0.5989709139163103,
+      "auroc_95_ci": [
+        0.5771461734985187,
+        0.6208087516836773
+      ],
+      "average_precision": 0.24819041919339419,
+      "average_precision_95_ci": [
+        0.2251638626473838,
+        0.2763512406769633
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 705,
+      "positive_definition": "Source annotation positive for pneumonia",
+      "prevalence": 0.1822176272938744,
+      "relation_note": "Direct finding-name match.",
+      "score_key": "Pneumonia",
+      "source_label": "pneumonia"
+    },
+    "Pneumothorax": {
+      "auroc": 0.7797169756086135,
+      "auroc_95_ci": [
+        0.7525352616667232,
+        0.8067820519560075
+      ],
+      "average_precision": 0.14893155878760753,
+      "average_precision_95_ci": [
+        0.12651193242715572,
+        0.18114923488010926
+      ],
+      "n_evaluable": 3869,
+      "n_positive": 235,
+      "positive_definition": "Source annotation positive for pneumothorax",
+      "prevalence": 0.06073920909795813,
+      "relation_note": "Direct finding-name match.",
+      "score_key": "Pneumothorax",
+      "source_label": "pneumothorax"
+    }
+  },
+  "provenance": {
+    "adapter": {
+      "adapter_source_sha256": "8045e4fdb2c5ffc36cab806dfa94d5e03bd99ff79e6da569ed9b793a59762b32",
+      "device": "mps",
+      "input_maxval": 255,
+      "model_checkpoint_sha256": "56524913dd16a906422e8d8b66a7a5c46be1d82eb7ac012d8103776f1aa68899",
+      "runner_source_sha256": "1fe3e5a91ff47ef6f186c20c713756e378b83d84ab86ff5e702a0b49552f0dec"
+    },
+    "compatibility_patch": "https://github.com/asharma391/MedRAX",
+    "dataset_public_zip": "https://ndownloader.figshare.com/files/39673366",
+    "dataset_source": "https://doi.org/10.6084/m9.figshare.22302775.v1",
+    "dataset_zip_member_csv": "ChestDR/chestdr_published_19d.csv",
+    "medrax_commit": "d243cc50348fa0f0c219cc623e2cf26b906be676",
+    "medrax_repository": "https://github.com/bowang-lab/MedRAX",
+    "runtime": {
+      "numpy": "2.5.4",
+      "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+      "python": "3.13.15 (v3.13.15:4061bc4c35f, Aug  5 2026, 09:08:51) [Clang 21.0.0 (clang-2100.1.1.101)]",
+      "scikit_learn": "1.9.1",
+      "torch": "2.15.0",
+      "torchvision": "0.29.2",
+      "torchxrayvision": "1.5.7"
+    },
+    "test_manifest_citation": "https://doi.org/10.1038/s41597-023-02460-0",
+    "test_manifest_commit": "3bfe04b153ab461baccbe574c9dc3dff84ab8b11",
+    "test_manifest_origin": "MedFMC few-shot baseline testing list: the remaining test images after its few-shot support-pool selection; pinned to the cited repository commit.",
+    "test_manifest_repository": "https://github.com/wllfore/MedFMC_fewshot_baseline",
+    "test_manifest_url": "https://raw.githubusercontent.com/wllfore/MedFMC_fewshot_baseline/3bfe04b153ab461baccbe574c9dc3dff84ab8b11/data/ChestDR/test.txt"
+  },
+  "schema_version": 1,
+  "scope": "tool-level external dataset evaluation; not a full MedRAX-agent or clinical evaluation",
+  "score_semantics": "TorchXRayVision operating-point-normalized model score in [0, 1]; not a calibrated probability."
+}

@@ -1,0 +1,81 @@
+{
+  "bootstrap": {
+    "base_seed": 20271107,
+    "endpoint_seed_scheme": "AUROC=base_seed+endpoint_index; average_precision=base_seed+100+endpoint_index",
+    "repetitions": 2000
+  },
+  "cohort": {
+    "analysis_unit": "image",
+    "fixed_test_rows_available": 624,
+    "n_inferred": 624,
+    "patient_grouping": "not exposed by the public acquisition view; no patient-level claim",
+    "raw_data_policy": "the checksum-verified source Parquet and each decoded image exist only in a temporary directory during inference and are deleted on exit; aggregate results only are written to the repository",
+    "selection": "entire checksum-pinned held-out source test split"
+  },
+  "created_at_utc": "2026-11-07T23:23:11.600662+00:00",
+  "dataset_name": "Pediatric pneumonia held-out test set",
+  "limitations": [
+    "This is a narrow binary pediatric domain-transfer test (normal versus pneumonia), not an adult multi-finding clinical validation.",
+    "The public acquisition view does not expose patient grouping, so bootstrap intervals are image-level rather than patient-clustered.",
+    "The pinned source convention is 0=NORMAL and 1=PNEUMONIA; its 234 normal and 390 pneumonia test labels are used as released.",
+    "The source label is used as released; no model threshold was selected or tuned on this test split.",
+    "The result evaluates the classifier component only, not the GPT-driven MedRAX agent or a clinical workflow."
+  ],
+  "primary_endpoint_results": {
+    "Pneumonia": {
+      "auroc": 0.7172364672364673,
+      "auroc_95_ci": [
+        0.6769397227409277,
+        0.7563561659655941
+      ],
+      "average_precision": 0.8037341836504797,
+      "average_precision_95_ci": [
+        0.7613977471885943,
+        0.8440042436075866
+      ],
+      "n_evaluable": 624,
+      "n_positive": 390,
+      "positive_definition": "Source annotation positive for Pneumonia",
+      "prevalence": 0.625,
+      "relation_note": "Direct finding-name match to the held-out source binary label.",
+      "score_key": "Pneumonia",
+      "source_label": "Pneumonia"
+    }
+  },
+  "provenance": {
+    "adapter": {
+      "adapter_source_sha256": "8045e4fdb2c5ffc36cab806dfa94d5e03bd99ff79e6da569ed9b793a59762b32",
+      "device": "mps",
+      "input_maxval": 255,
+      "model_checkpoint_sha256": "56524913dd16a906422e8d8b66a7a5c46be1d82eb7ac012d8103776f1aa68899",
+      "runner_source_sha256": "1fe3e5a91ff47ef6f186c20c713756e378b83d84ab86ff5e702a0b49552f0dec"
+    },
+    "compatibility_patch": "https://github.com/asharma391/MedRAX",
+    "dataset_citation": "https://doi.org/10.17632/rscbjbr9sj.2",
+    "dataset_source": "https://huggingface.co/datasets/hf-vision/chest-xray-pneumonia",
+    "medrax_commit": "d243cc50348fa0f0c219cc623e2cf26b906be676",
+    "medrax_repository": "https://github.com/bowang-lab/MedRAX",
+    "pinned_parquet_bytes": 78220681,
+    "pinned_parquet_path": "data/test-00000-of-00001.parquet",
+    "pinned_parquet_sha256": "56c173b527abda58ca851a3ecfc094174b5ac9a0181204bcab4f66e999c65cfc",
+    "pinned_parquet_url": "https://huggingface.co/datasets/hf-vision/chest-xray-pneumonia/resolve/c1a67c18df1a52ec332ffc00418f4eaa61a9f2bc/data/test-00000-of-00001.parquet?download=true",
+    "public_acquisition_revision": "c1a67c18df1a52ec332ffc00418f4eaa61a9f2bc",
+    "public_acquisition_split": "test",
+    "runtime": {
+      "numpy": "2.5.4",
+      "platform": "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+      "python": "3.13.15 (v3.13.15:4061bc4c35f, Aug  5 2026, 09:08:51) [Clang 21.0.0 (clang-2100.1.1.101)]",
+      "scikit_learn": "1.9.1",
+      "torch": "2.15.0",
+      "torchvision": "0.29.2",
+      "torchxrayvision": "1.5.7"
+    },
+    "source_label_convention": {
+      "0": "NORMAL",
+      "1": "PNEUMONIA"
+    }
+  },
+  "schema_version": 1,
+  "scope": "tool-level external dataset evaluation; not a full MedRAX-agent or clinical evaluation",
+  "score_semantics": "TorchXRayVision operating-point-normalized model score in [0, 1]; not a calibrated probability."
+}
